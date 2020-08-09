@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40B2B2"
+    android:orientation="vertical"
+    tools:context="io.aware.ava.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Deepl API-Key"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/deepl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="scaleserp API-Key"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/scaleserp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="openweathermap"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/owm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="wolframalpha_api"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/wolframalpha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="server url"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/server_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="https://skillserver.de"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="caldav url"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/caldav_server_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="https://caldav.url"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="caldav name"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/caldavname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="caldav pw"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/caldavpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName|textPassword"
+                    android:text="Password"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="wakeword"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/wakewordspin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Websites"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/webviewload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/speechrecognitionengine"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/asr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="locked screen"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/lckdscreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="help feature"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <Spinner
+                    android:id="@+id/helpfeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:popupBackground="@android:color/white"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="phone number"
+                android:textColor="@color/design_default_color_on_secondary" />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/design_default_color_background"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="phone number"
+                android:textColor="@color/colorAccent" />
+        </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="IBM ASR Url"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/ibmasrurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="IBM ASR Url"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="IBM ASR API -Key"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/ibmasrkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="IBM ASR API -Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="IBM TTS Url"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/ibmttsurl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="IBM TTS Url"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="IBM TTS API -Key"
+                    android:textColor="@color/design_default_color_on_secondary" />
+
+                <EditText
+                    android:id="@+id/ibmttskey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/design_default_color_background"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="IBM TTS API -Key"
+                    android:textColor="@color/colorAccent" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/logs"
+            style="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Logs" />
+
+        <Button
+            android:id="@+id/setdefault"
+            style="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="Default" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        style="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:text="@string/save" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "io.aware.ava"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 38
+        versionName "0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        pickFirst 'lib/*/libopus.so'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    compile group: 'info.debatty', name: 'java-string-similarity', version: '0.10'
+    implementation 'org.tensorflow:tensorflow-android:1.13.1'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
+    implementation 'org.adblockplus:adblock-android-webview:3.16'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    implementation 'com.github.mozilla:mozillaspeechlibrary:1.0.7'
+    implementation 'net.lingala.zip4j:zip4j:1.3.2'
+
+    implementation ('com.ibm.watson:ibm-watson:8.0.0') {
+        exclude group: 'com.google.code.findbugs', module: 'annotations'
+    }
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.2'
+
+}
+configurations.all {
+    // OkHttp 3.5.0+ includes the websockets API, so we need this to prevent a conflict
+    exclude module: 'okhttp-ws'
+}

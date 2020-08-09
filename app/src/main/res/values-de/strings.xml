@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AVA</string>
+    <string name="save">Speichern</string>
+    <string name="speak">Sprechen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="wakeword">"Wakeword: Hey Ava (heɪ  eɪvə) "</string>
+    <string name="musicplay">Sie können Musik hören: Spiele satisfaction von den Rolling Stones</string>
+    <string name="getweather">Das Wetter abfragen: Wie ist das Wetter in Hamburg</string>
+    <string name="muchmore">Und vieles mehr...</string>
+    <string name="activedevelopment">Diese App wird aktiv weiterentwickelt um sowohl Qualität als auch Quantität der Fähigkeiten zu erhöhen</string>
+
+    <string-array name="lckscr">
+        <item>auto</item>
+        <item>Aus</item>
+        <item>An</item>
+    </string-array>
+
+    <string-array name="hlpf">
+        <item>Aus</item>
+        <item>Alarm</item>
+        <item>SMS</item>
+        <item>Anruf</item>
+        <item>SMS + Alarm</item>
+    </string-array>
+
+
+    <string-array name="webviewloading">
+        <item>Laden</item>
+        <item>Fragen</item>
+        <item>Nicht laden</item>
+    </string-array>
+    <string name="loadWeb">Möchten sie diese URL laden ?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="language">Sprache</string>
+    <string name="assistant">Assistent</string>
+    <string name="wakewordhint">Die Funktion des Hintergrund Wakeword-listeners steht ihnen erst ab Android 10 zur Verfügung</string>
+    <string name="agree">Akzeptieren</string>
+    <string name="diagree">Nicht akzeptieren</string>
+    <string name="disclaimer">Haftungsasschluss</string>
+    <string name="acceptingdisclaimer">Ich akzeptiere die unter dem Link aufgeführten Bedingungen</string>
+    <string name="speechrecognitionengine">Spracherkennung</string>
+    <string name="stoprec">Aufnahme beenden</string>
+</resources>
